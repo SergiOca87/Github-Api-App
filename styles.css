@@ -1,20 +1,24 @@
+/* Colors */
 body {
   margin: 0;
   height: 100%;
   color: #282828;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background: #1b1b22;
+  color: #f0f1f3; }
 
 p {
   font-size: 14px; }
 
 a {
-  color: #282828; }
+  color: #f0f1f3; }
 
 .wrap {
-  background: #eee;
   width: 40%;
   min-width: 540px;
   margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   min-height: 100vh;
   padding: 5%; }
 
@@ -24,7 +28,8 @@ a {
   margin: 0 auto;
   border-radius: 10px;
   background: white;
-  box-shadow: 7px 7px 39px -5px rgba(0, 0, 0, 0.75); }
+  box-shadow: 7px 7px 39px -5px rgba(0, 0, 0, 0.75);
+  background: #3c4554; }
 
 .input-search {
   display: -webkit-box;
@@ -103,8 +108,7 @@ a {
 
 #list li h3 {
   margin: 0;
-  float: left;
-  font-weight: bold; }
+  float: left; }
 
 #list li span {
   float: right; }

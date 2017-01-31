@@ -1,14 +1,5 @@
 "use strict";
 
-/* TODO:
- 
-   Add unit testing for the functions, specially the answers from the server and what 
-   the user would put in the search box?
-   compile again at the end and explain
-   
-   
-*/
-
 
 document.getElementById("submit").addEventListener("click", getAUser);
 
