@@ -2,8 +2,39 @@
 <html>
 <head>
 	<title> Github App</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <div class="wrap">
+    <div class="form-and-result">
+      <form class="input-search" onsubmit="return false">
+        <input type="text" placeholder="Search username..." id="search" >
+        <button value="Search" id="submit"> Search </button>
+      </form>
+      <div id="user-output">
+        <div class="user-wrap">
+          <img id="avatar" src="">
+          <div class="user-info">
+            <!--
+              User info appended here.
+            -->
+          </div>
+        </div>
+      <div id="repo-list">
+        <h3 class="ul-title"> Repositories </h3>
+          <ul id="list">
+            <!-- 
+              Repo list appended here.
+             -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://use.fontawesome.com/94525c49e6.js"></script>
 </body>
 </html>
