@@ -1,8 +1,15 @@
 /* Colors */
-$base: #1b1b22;
-$electric: #3c4554;
+$base: #3c4554 ;
+$electric:#1b1b22 ;
 $main-font: #f0f1f3;
 
+$breakpoint: 600px;
+
+@mixin flexbox{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 
 body {
@@ -14,19 +21,25 @@ body {
   color: $main-font;
 }
 
+.app-title{
+  text-align: center;
+    .fa{
+      margin: 0 auto;
+      font-size: 50px;
+      padding-bottom: 5%;
+    }
+}
+
 p {
   font-size: 14px;
 }
 
-a{
-  color: $main-font;
-}
+
 
 
 .wrap {
-  
   width: 40%;
-  min-width: 540px;
+  min-width: 450px;
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom:5%;
@@ -36,7 +49,6 @@ a{
 
 .form-and-result {
   padding: 30px 20px;
-  width: 80%;
   margin: 0 auto;
   border-radius: 10px;
   background: white;
@@ -45,9 +57,7 @@ a{
 }
 
 .input-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flexbox;
   white-space: nowrap;
 }
 
@@ -69,12 +79,11 @@ a{
 }
 
 .user-wrap {
+  @include flexbox;
   text-align: left;
   padding: 15px 0 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100px;
+  padding: 5%;
   display: none;
 }
 
@@ -94,8 +103,7 @@ a{
 }
 
 .user-not-found{
-  background: #FF9595;
-  color: #B73232;
+  background: $base;
   padding: 5%;
   border-radius: 5px;
   border: 1px solid #B73232;
@@ -112,37 +120,44 @@ a{
 
 #repo-list {
   display: none;
-}
-
-.ul-title {
-  margin: 5% 0 0 0;
-  border-bottom: 2px solid #7E7C7C;
-  clear: both;
-  padding-bottom: 10px;
+    .ul-title{
+      margin: 5% 0 0 0;
+      border-bottom: 2px solid #7E7C7C;
+      clear: both;
+      padding-bottom: 10px;
+      text-align: center;
+    }
 }
 
 #list {
   list-style: none;
   padding: 0;
   margin: 0;
-  
+    li {
+      @include flexbox;
+      border-bottom: 1px solid #D6D6D6;
+      height: 70px;
+      line-height: 70px;
+      padding: 0 10px;
+      justify-content: space-between;
+      a{
+        color: $main-font;
+      }
+      h3 {
+        margin: 0;
+        float: left;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
 }
 
-#list li {
-  border-bottom: 1px solid #D6D6D6;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 10px;
+@media screen and(max-width:$breakpoint){
+  .wrap{
+    width: 100%;
+    padding: 0;
+    font-size: 0.8em;
+  }
 }
-
-#list li h3 {
-  margin: 0;
-  float: left;
- 
-}
-
-#list li span {
-  float: right;
-}
-
 

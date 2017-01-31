@@ -4,18 +4,22 @@ body {
   height: 100%;
   color: #282828;
   font-family: 'Roboto', sans-serif;
-  background: #1b1b22;
+  background: #3c4554;
   color: #f0f1f3; }
+
+.app-title {
+  text-align: center; }
+  .app-title .fa {
+    margin: 0 auto;
+    font-size: 50px;
+    padding-bottom: 5%; }
 
 p {
   font-size: 14px; }
 
-a {
-  color: #f0f1f3; }
-
 .wrap {
   width: 40%;
-  min-width: 540px;
+  min-width: 450px;
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -24,12 +28,11 @@ a {
 
 .form-and-result {
   padding: 30px 20px;
-  width: 80%;
   margin: 0 auto;
   border-radius: 10px;
   background: white;
   box-shadow: 7px 7px 39px -5px rgba(0, 0, 0, 0.75);
-  background: #3c4554; }
+  background: #1b1b22; }
 
 .input-search {
   display: -webkit-box;
@@ -52,12 +55,13 @@ a {
   font-weight: bold; }
 
 .user-wrap {
-  text-align: left;
-  padding: 15px 0 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
+  padding: 15px 0 5px 0;
   height: 100px;
+  padding: 5%;
   display: none; }
 
 .username,
@@ -73,8 +77,7 @@ a {
   font-size: 24px; }
 
 .user-not-found {
-  background: #FF9595;
-  color: #B73232;
+  background: #3c4554;
   padding: 5%;
   border-radius: 5px;
   border: 1px solid #B73232; }
@@ -88,29 +91,38 @@ a {
 
 #repo-list {
   display: none; }
-
-.ul-title {
-  margin: 5% 0 0 0;
-  border-bottom: 2px solid #7E7C7C;
-  clear: both;
-  padding-bottom: 10px; }
+  #repo-list .ul-title {
+    margin: 5% 0 0 0;
+    border-bottom: 2px solid #7E7C7C;
+    clear: both;
+    padding-bottom: 10px;
+    text-align: center; }
 
 #list {
   list-style: none;
   padding: 0;
   margin: 0; }
+  #list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #D6D6D6;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 10px;
+    justify-content: space-between; }
+    #list li a {
+      color: #f0f1f3; }
+    #list li h3 {
+      margin: 0;
+      float: left; }
+      #list li h3:hover {
+        text-decoration: underline; }
 
-#list li {
-  border-bottom: 1px solid #D6D6D6;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 10px; }
-
-#list li h3 {
-  margin: 0;
-  float: left; }
-
-#list li span {
-  float: right; }
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+    padding: 0;
+    font-size: 0.8em; } }
 
 /*# sourceMappingURL=styles.css.map */
