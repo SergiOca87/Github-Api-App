@@ -93,7 +93,7 @@ document.getElementById("submit").addEventListener("click", getAUser);
      li.addClass.("in-li");
 */
       /* Template for the LI*/ 
-      li.innerHTML = `<a href= ${responseObj[i + 1].html_url} target="_blank">
+      li.innerHTML = `<a href= ${responseObj[i].html_url} target="_blank">
        <h3> ${responseObj[i].name} </h3> </a> 
        <span> <i class='fa fa-star' aria-hidden='true'></i> ${responseObj[i].stargazers_count} <i class='fa fa-code-fork' aria-hidden='true'> </i> ${responseObj[i].forks_count} </span>`;
 
