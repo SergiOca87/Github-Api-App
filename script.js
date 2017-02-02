@@ -87,7 +87,7 @@ document.getElementById("submit").addEventListener("click", getAUser);
     list.innerHTML = "";
 
      /* Create as many li's as number of repos */
-    for (let i = 0; i < responseObj.length; i++) {
+    for (let i = 0; i <= responseObj.length; i++) {
      const li = document.createElement("LI");
       console.log(responseObj.length);
      /*
